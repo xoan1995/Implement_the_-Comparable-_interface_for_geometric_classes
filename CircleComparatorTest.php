@@ -1,7 +1,7 @@
 <?php
-include "CircleComparator.php";
+include "ComparableCircle.php";
 
-$circleOne = new Circles( 4,'ht1');
-$circleTwo = new Circles( 4,'ht2');
-$circleComparator = new CircleComparator();
-echo($circleComparator->compare($circleOne, $circleTwo));
+$circleOne = new ComparableCircle('circleOne', 8);
+$circleTwo = new ComparableCircle('circleTwo', 2);
+
+echo ($circleOne->compareTo($circleTwo));
